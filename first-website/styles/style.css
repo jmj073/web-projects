@@ -38,3 +38,8 @@ img {
   margin: 0 auto;
   max-width: 100%;
 }
+
+.done {
+  color: darkseagreen;
+  text-decoration: line-through solid black 2px;
+}
