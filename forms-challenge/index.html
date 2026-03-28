@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Forms challenge</title>
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <h1>We want your feedback!</h1>
+
+    <p>
+      We're very excited that you visited the
+      <a href="#">little house in the woods</a>, and we want to hear what you
+      thought of it! Please fill in the below sections. You don't need to
+      provide your name or contact details, but if you do, we'll enter you into
+      a <a href="#">prize draw</a> where you'll have a chance to win prizes.
+    </p>
+
+    <form>
+      <section class="form-section">
+        <h2>Facilities</h2>
+
+        <fieldset>
+          <legend>Was the porridge</legend>
+          <input
+            type="radio"
+            name="porridge"
+            value="hot"
+            id="porridge-hot"
+            checked
+          />
+          <label for="porridge-hot">Too hot?</label>
+          <input type="radio" name="porridge" value="cold" id="porridge-cold" />
+          <label for="porridge-cold">Too cold?</label>
+          <input
+            type="radio"
+            name="porridge"
+            value="right"
+            id="porridge-right"
+          />
+          <label for="porridge-right">Just right?</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Were the beds</legend>
+          <input type="radio" name="bed" value="hard" id="bed-hard" checked />
+          <label for="bed-hard">Too hard?</label>
+          <input type="radio" name="bed" value="soft" id="bed-soft" />
+          <label for="bed-soft">Too soft?</label>
+          <input type="radio" name="bed" value="right" id="bed-right" />
+          <label for="bed-right">Just right?</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Describe the chairs (select all you agree with)</legend>
+          <input type="checkbox" name="chair" value="comfy" id="chair-comfy" />
+          <label for="chair-comfy">Comfy</label>
+          <input
+            type="checkbox"
+            name="chair"
+            value="luxurious"
+            id="chair-luxurious"
+          />
+          <label for="chair-luxurious">Luxurious</label>
+          <input type="checkbox" name="chair" value="hitec" id="chair-hitec" />
+          <label for="chair-hitec">Hi tec</label>
+          <input
+            type="checkbox"
+            name="chair"
+            value="pretty"
+            id="chair-pretty"
+          />
+          <label for="chair-pretty">Pretty</label>
+          <input
+            type="checkbox"
+            name="chair"
+            value="majestic"
+            id="chair-majestic"
+          />
+          <label for="chair-majestic">Majestic</label>
+        </fieldset>
+      </section>
+
+      <section class="form-section">
+        <h2>About your hosts</h2>
+
+        <span class="separator">
+          <label for="bear">Who's your favorite bear?</label>
+          <select name="bear" id="bear">
+            <option value="papa">Papa bear</option>
+            <option value="mama">Mama bear</option>
+            <option value="junior">Junior</option>
+            <option value="dozer">Dozer</option>
+          </select>
+        </span>
+
+        <span class="separator">
+          <label for="greeting">Which greeting did you prefer?</label>
+          <select name="greeting" id="greeting">
+            <option value="wave">Wave</option>
+            <option value="friendly">Friendly greeting</option>
+            <option value="growl">Growl</option>
+            <option value="claw">Claw marks in the door</option>
+          </select>
+        </span>
+      </section>
+
+      <section class="form-section">
+        <h2>Any other feedback?</h2>
+
+        <label for="comments">Give us your comments</label>
+        <br />
+        <textarea name="comments" id="comments"></textarea>
+      </section>
+
+      <section class="form-section">
+        <h2>Your details</h2>
+
+        <span class="separator">
+          <label for="user-name">Name</label>
+          <input type="text" name="name" id="user-name" />
+        </span>
+        <span class="separator">
+          <label for="user-name">Email</label>
+          <input type="email" name="email" id="user-email" />
+        </span>
+        <span class="separator">
+          <label for="user-phone">Phone</label>
+          <input type="tel" name="phone" id="user-phone" />
+        </span>
+      </section>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
